@@ -19,7 +19,7 @@ if($_SESSION['key'] === $_POST['token']) {
     $message = $_SESSION['message'];
 
 //メールの送り先
-$to = 'santafe.daisuke@gmail.com';
+$to = '';
 
 //メールの件名
 $subject = 'お問い合わせがありました';
@@ -34,8 +34,8 @@ $comment .= "メールアドレス:" . $email . "\n\n";
 $comment .= "お問い合わせ本文:" . $message . "\n\n";
 
 //メールヘッダー
-$headers = "From: 小さなパスタ屋Tino  <santafe.daisuke@gmail.com>\n";
-$headers .= "Reply-To: 小さなパスタ屋Tino  <santafe.daisuke@gmail.com>\n";
+$headers = "From: 小さなパスタ屋Tino  <>\n";
+$headers .= "Reply-To: 小さなパスタ屋Tino  <>\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
 //文字化け対策
