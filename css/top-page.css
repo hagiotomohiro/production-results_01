@@ -1,0 +1,485 @@
+/* News */
+.section__outer {
+  background-color: #fcfcfc;
+  border-radius: 2%;
+  box-shadow: 5px 5px 5px 0px rgba(114, 114, 114, 0.2);
+  display: flex;
+  width: 70%;
+}
+
+.section__inner {
+  padding: 20% 2% 30% 2%;
+  text-align: center;
+  text-wrap: balance;
+  width: 50%;
+}
+
+.instagram {
+  margin-top: 50%;
+}
+
+.instagram img {
+  margin-top: 20%;
+  width: 15%;
+}
+
+.section__content {
+  position: absolute;
+  top: -150px;
+  right: 0;
+  width: 50%;
+}
+
+.section__ttl-en {
+  padding: 15% 3%;
+  writing-mode: vertical-rl;
+}
+
+.section__txt {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.menu__btn {
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  border-radius: 99999px;
+  color: #FFF;
+  display: inline-block;
+  height: 100px;
+  line-height: 50px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 300px;
+
+  animation: yureru-updown 2s infinite;
+}
+
+@keyframes yureru-updown {
+  0% {
+    transform: translate(0px, 2px);
+  }
+
+  5% {
+    transform: translate(0px, -2px);
+  }
+
+  10% {
+    transform: translate(0px, 2px);
+  }
+
+  15% {
+    transform: translate(0px, -2px);
+  }
+
+  20% {
+    transform: translate(0px, 2px);
+  }
+
+  25% {
+    transform: translate(0px, -2px);
+  }
+
+  30% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.menu__btn::before {
+  background: -webkit-linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+  background: linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+}
+
+.btn__inner {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+  z-index: 99;
+}
+
+.btn__inner img {
+  height: 60px;
+  width: 60px;
+}
+
+.btn__inner p {
+  color: #ffffff;
+  font-size: 1.85rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+  margin-left: 20px;
+}
+
+/* About */
+.reverse {
+  flex-direction: row-reverse;
+  margin-left: auto;
+}
+
+.secondary {
+  margin-top: 7%;
+}
+
+.content-reverse {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(8, 0.5fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.topAbout__item-1 {
+  grid-area: 1 / 1 / 9 / 3;
+  object-fit: cover;
+  object-position: 0 50%;
+}
+
+.topAbout__item-1 img {
+  height: 80%;
+  object-fit: cover;
+}
+
+.topAbout__item-2 {
+  grid-area: 1 / 3 / 3 / 10;
+}
+
+.topAbout__item-2 img {
+  height: 152%;
+}
+
+.topAbout__item-3 {
+  grid-area: 4 / 3 / 6 / 6;
+}
+
+/* Menu */
+.section__txt dt {
+  font-weight: bold;
+}
+
+.section__txt dt:last-of-type {
+  margin-top: 5%;
+}
+
+.topMenu-lunch::before {
+  content: url(../img/top/day.png);
+  margin: 0 2%;
+}
+
+.topMenu-lunch::after {
+  content: url(../img/top/day.png);
+  margin: 0 2%;
+}
+
+.topMenu-dinner::before {
+  content: url(../img/top/night.png);
+  margin: 0 2%;
+}
+
+.topMenu-dinner::after {
+  content: url(../img/top/night.png);
+  margin: 0 2%;
+}
+
+.topMenu-img {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.topMenu-img img {
+  aspect-ratio: 1 / 1;
+  margin: 1%;
+  object-fit: cover;
+  width: 45%;
+}
+
+/* Calendar */
+.section__content-secondary {
+  position: absolute;
+  top: -150px;
+  left: 0;
+  width: 55%;
+}
+
+.fc {
+  background-color: #fcfcfc;
+  border: solid 1px #e8e6e6;
+  padding: 3%;
+  width: 100%;
+}
+
+.fc-toolbar-title {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bold;
+}
+
+.fc-daygrid-day-frame, .fc-dayGridMonth-view, .fc-scrollgrid-sync-inner {
+  outline: solid 1px #333333;
+}
+
+/* Contact */
+.contact-section-outer {
+  width: 70%;
+}
+
+.contact-section-inner {
+  padding-left: 2%;
+  text-align: left;
+  width: 80%;
+}
+
+.contact-secondary {
+  margin-bottom: 20px;
+}
+
+.contact-button {
+  text-align: left;
+}
+
+.contact-button a {
+  padding: 3% 8%;
+}
+
+/* 2024.10 追加 */
+.top-reservation__section-net {
+  margin-top: 50px;
+}
+
+.top-reservation__section-net h4 {
+  border-left: 5px solid #003C65;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.top-contact__link {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.top-contact__icon {
+  background-color: #fcfcfc;
+  border: 4px solid #fcfcfc;
+  border-radius: 9999px;
+  padding: 20px 30px;
+  width: 250px;
+  transition: .2s;
+}
+
+.top-contact__icon:focus,
+.top-contact__icon:hover {
+  border: 4px solid #FFAA00;
+}
+
+.top-reservation__section-tel {
+  margin-top: 20px;
+}
+
+.top-reservation__section-tel h4 {
+  border-left: 5px solid #003C65;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.top-contact-tell {
+  color: red;
+  font-size: clamp(1.5rem, 3.33vw, 2.5rem);
+  font-weight: bold;
+  padding-left: 40px;
+  position: relative;
+}
+
+.top-contact-tell::before {
+  background-image: url(../img/contact/tel-icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  content: "";
+  height: 30px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  width: 30px;
+}
+
+/* 追加 end */
+
+
+@media screen and (max-width: 767px) {
+  .section__content {
+    position: static;
+  }
+
+  .section__outer {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .section__inner {
+    padding: 5%;
+    text-align: center;
+    text-wrap: wrap;
+    width: 100%;
+  }
+
+  .section__content {
+    position: absolute;
+    top: 99%;
+    right: 0;
+    width: 100%;
+  }
+
+  .section__txt {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .menu__btn {
+    height: 80px;
+    line-height: 50px;
+    width: 200px;
+  }
+
+  .btn__inner {
+    margin-top: 15px;
+  }
+
+  .btn__inner img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .btn__inner p {
+    color: #ffffff;
+    font-size: 1.5625rem;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-left: 10px;
+  }
+
+  .sns__content {
+    width: 90%;
+  }
+
+  .section__ttl-en {
+    padding: 5% 3%;
+    writing-mode: vertical-rl;
+  }
+
+  .about__content {
+    top: 300px
+  }
+
+  .content-reverse {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .topAbout__item {
+    width: 47%;
+    height: 200px;
+  }
+
+  .topAbout__item img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .topAbout__item-3 {
+    display: none;
+  }
+
+  .topMenu-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .section__content-secondary {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    width: 100%;
+  }
+
+  .fc {
+    height: 500px;
+  }
+
+  .fc-header-toolbar {
+    font-size: 0.65rem;
+  }
+
+  .contact-section-outer {
+    width: 100%;
+  }
+
+  .contact-section-inner {
+    padding: 5% 0 0 0;
+    text-align: center;
+    text-wrap: balance;
+    width: 100%;
+  }
+
+  .contact-secondary {
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+
+  .contact-button {
+    text-align: center;
+  }
+
+  .top-reservation__section-net h4 {
+    border-left: none;
+    margin-bottom: 10px;
+    padding-left: 0;
+  }
+
+  .top-reservation__section-net h4 span {
+    border-bottom: 2px solid #003C65;
+    padding-bottom: 2px;
+  }
+
+  .top-contact__icon {
+    background-color: #fcfcfc;
+    border: 4px solid #FFAA00;
+    border-radius: 9999px;
+    padding: 15px 25px;
+    width: 210px;
+    transition: .2s;
+  }
+
+  .top-reservation__section-tel {
+    margin-top: 40px;
+  }
+
+  .top-reservation__section-tel h4 {
+    border-left: none;
+    margin-bottom: 20px;
+    padding-left: 0;
+  }
+
+  .top-reservation__section-tel h4 span {
+    border-bottom: 2px solid #003C65;
+    padding-bottom: 2px;
+  }
+}

@@ -1,0 +1,322 @@
+/* Contact 入力ページ */
+.contact__section {
+  margin: 5% auto 20% auto;
+  max-width: 60%;
+  text-align: center;
+}
+
+.contact__ttl {
+  margin-bottom: 5%;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.contact-form dt {
+  line-height: 3;
+  margin-right: 5%;
+  padding: 3% 0;
+  text-align: right;
+  width: 20%;
+}
+
+.contact-form dd {
+  padding: 3% 0;
+  width: 75%;
+}
+
+.contact-tell {
+  color: red;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0;
+  text-align: center;
+}
+
+.contact__nav {
+  display: flex;
+  justify-content: center;
+  margin: 10% 0;
+}
+
+.nav__content {
+  background-color: #0065A9;
+  border-radius: 100vh;
+  padding: 1% 2%;
+  text-align: center;
+  width: 25%;
+}
+
+.contact__confirm, .contact__complete {
+  background-color: #f6f0e7;
+  border: solid 3px #0065A9;
+}
+
+.contact__input p {
+  color: #f6f0e7;
+}
+
+.contact__confirm p {
+  color: #0065A9;
+}
+
+.contact__complete p {
+  color: #0065A9;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 10px solid #555555;
+  border-right: 0;
+  margin: auto 3%;
+}
+
+.input-area {
+  border: solid 1px #333;
+  height: 50px;
+  padding: 2%;
+  width: 100%;
+}
+
+.message-area {
+  height: 200px;
+}
+
+.form__button {
+  margin-top: 5%;
+}
+
+.form__button input {
+  background-color: #0065A9;
+  border: solid 3px #0065A9;
+  border-radius: 100vh;
+  color: #f0efef;
+  font-family: "Noto Sans JP", sans-serif;
+  padding: 3% 7%;
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.form__button input:hover {
+  background-color: #f6f0e7;
+  color: #0065A9;
+}
+
+/* 2024.10 追加 */
+.reservation__section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+.reservation__section-net {
+  margin-right: 30px;
+  text-align: center;
+  width: 400px;
+}
+
+.reservation__section-net h3 {
+  margin-bottom: 30px;
+}
+
+.contact__link {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.contact__icon {
+  background-color: #fcfcfc;
+  border: 4px solid #fcfcfc;
+  border-radius: 9999px;
+  padding: 20px 30px;
+  width: 250px;
+  transition: .2s;
+}
+
+.contact__icon:focus,
+.contact__icon:hover {
+  border: 4px solid #FFAA00;
+}
+
+.reservation__section-tel {
+  margin-left: 30px;
+  text-align: center;
+  width: 400px;
+}
+
+.reservation__section-tel h3 {
+  margin-bottom: 50px;
+}
+
+.contact-tell {
+  padding-left: 40px;
+  position: relative;
+}
+
+.contact-tell::before {
+  background-image: url(../img/contact/tel-icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  content: "";
+  height: 30px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  width: 30px;
+}
+
+/* 追加 end */
+
+/* 確認ページ */
+.confirm__input, .confirm__complete {
+  background-color: #f6f0e7;
+  border: solid 3px #0065A9;
+}
+
+.confirm__input p {
+  color: #0065A9;
+}
+
+.confirm__confirm p {
+  color: #f6f0e7;
+}
+
+.confirm__complete p {
+  color: #0065A9;
+}
+
+table {
+  margin: 10% 0;
+  width: 100%;
+}
+
+th, td {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: clamp(0.7rem, 3vw, 2.5rem);
+}
+
+th {
+  border-bottom: solid 1px #333;
+  padding: 3% 2%;
+  text-align: right;
+  width: 30%;
+}
+
+td {
+  border-bottom: solid 1px #333;
+  padding: 3% 2%;
+  text-align: left;
+  width: 65%;
+}
+
+.border-none {
+  border-bottom: none;
+}
+
+.contact__button {
+  background-color: #0065A9;
+  border: solid 3px #0065A9;
+  border-radius: 100vh;
+  color: #f0efef;
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0 3%;
+  padding: 3% 7%;
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.contact__button:hover {
+  background-color: #f6f0e7;
+  color: #0065A9;
+}
+
+/* 送信完了ページ */
+.complete__input, .complete__confirm {
+  background-color: #f6f0e7;
+  border: solid 3px #0065A9;
+}
+
+.complete__input p {
+  color: #0065A9;
+}
+
+.complete__confirm p {
+  color: #0065A9;
+}
+
+.complete__complete p {
+  color: #f6f0e7;
+}
+
+.message {
+  margin: 5% 0;
+}
+
+.address {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 10% auto;
+  width: 80%;
+}
+
+.address-list {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: clamp(0.7rem, 1.3vw, 1.25rem);
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .contact__section {
+    max-width: 90%;
+  }
+
+  .contact-form dt {
+    width: 30%;
+  }
+
+  .contact-form dd {
+    width: 65%;
+  }
+
+  .reservation__section {
+    flex-direction: column;
+  }
+
+  .reservation__section-net {
+    margin-bottom: 60px;
+    margin-right: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .reservation__section-net h3 {
+    margin-bottom: 15px;
+  }
+
+  .contact__icon {
+    background-color: #fcfcfc;
+    border: 4px solid #FFAA00;
+    border-radius: 9999px;
+    padding: 15px 25px;
+    width: 210px;
+    transition: .2s;
+  }
+
+  .reservation__section-tel {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .reservation__section-tel h3 {
+    margin-bottom: 15px;
+  }
+}

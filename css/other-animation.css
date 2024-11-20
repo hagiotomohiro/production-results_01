@@ -1,0 +1,166 @@
+/* PCナビゲーション ホバー時のアニメーション */
+.header__nav-list a {
+  position: relative;
+}
+
+.header__nav-list a::after {
+  background: #f6f0e7;
+  content: "";
+  height: 3px;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scale(0, 1);
+  transition: all 200ms ease;
+  width: 100%;
+}
+
+.header__nav-list a:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+/* SPナビゲーション ホバー時のアニメーション */
+.slide-menu ul li a {
+  position: relative;
+}
+
+.slide-menu ul li a::after {
+  background: #f6f0e7;
+  content: "";
+  height: 3px;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scale(0, 1);
+  transition: all 200ms ease;
+  width: 100%;
+}
+
+.slide-menu ul li a:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+/* TOPへ戻る */
+#page-top {
+  /*リンクを右下に固定*/
+  opacity: 0;
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  transform: translateY(150px);
+  z-index: 2;
+}
+
+#page-top.UpMove {
+  /* 上に上がる動き */
+  animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#page-top.DownMove {
+  /* 下に下がる動き */
+  animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(150px);
+  }
+}
+
+#page-top a {
+  /* 画像の切り替えと動き */
+  /*aタグの形状*/
+  color: #333333;
+  display: block;
+  font-size: 1rem;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  /*背景画像の指定*/
+  background: url("../img/animation/pagetop-cat.png") no-repeat center;
+  background-size: contain;
+  opacity: 0.8;
+}
+
+#page-top.floatAnime a {
+  height: 300px;
+  width: 150px;
+  /*背景画像の指定*/
+  background: url("../img/animation/pagetop-floatcat.png") no-repeat center;
+  background-size: contain;
+  /*アニメーションの指定*/
+  animation: floatAnime 2s linear infinite;
+  opacity: 0;
+}
+
+@keyframes floatAnime {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+
+  25% {
+    transform: translateX(-6px);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(6px);
+    opacity: 0.8;
+  }
+}
+
+#page-top span {
+  position: absolute;
+  bottom: -25px;
+  right: 10px;
+  color: #333333;
+}
+
+footer {
+  /*footer上部で止める*/
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  #page-top a {
+    /* 画像の切り替えと動き */
+    /*aタグの形状*/
+    font-size: 0.8rem;
+    height: 70px;
+    width: 70px;
+  }
+
+  #page-top.floatAnime a {
+    height: 210px;
+    width: 100px;
+  }
+}

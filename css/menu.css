@@ -1,0 +1,280 @@
+/* lunch */
+.menu__content {
+  margin: 0 auto 15% auto;
+}
+
+.menu__ttl {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.menu__note {
+  padding: 2% 3%;
+  border: solid 1px #333333;
+  margin: 50px auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+.menu__group {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 5% auto;
+}
+
+.lunch__card {
+  margin: 5%;
+  text-align: center;
+  width: 40%;
+}
+
+.lunch__card p {
+  margin-bottom: 2%;
+}
+
+.hidden-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.menu__emphasis {
+  background: #FF1E21;
+  display: inline-block;
+  padding: 2%;
+  right: -30%;
+  top: 7%;
+  position: absolute;
+  text-align: center;
+  transform: rotate(45deg);
+  width: 90%;
+}
+
+.menu__emphasis p {
+  color: #f6f0e7;
+  font-size: clamp(0.6rem, 1.3vw, 1rem);
+  margin: 0;
+}
+
+.menu__unit {
+  margin: 0 auto;
+  width: 43%;
+}
+
+.menu__list {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__list dt {
+  border-bottom: solid 1px rgba(53, 53, 53, 0.2);
+  padding: 2% 0;
+  width: 80%;
+}
+
+.other-list {
+  border-bottom: none;
+  margin-bottom: 10%;
+}
+
+.menu__list dt:last-of-type {
+  border-bottom: none;
+  margin-bottom: 10%;
+}
+
+.menu__list dd {
+  border-bottom: solid 1px rgba(53, 53, 53, 0.2);
+  padding: 2% 0;
+  text-align: right;
+  width: 20%;
+}
+
+.menu__list dd:last-of-type {
+  border-bottom: none;
+  margin-bottom: 10%;
+}
+
+.menu__list-other {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* 2024.10　追加 */
+.menu__inner {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #a3a3a3;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  margin-top: 50px;
+  max-width: 600px;
+  padding: 5%;
+  text-align: center;
+}
+
+.menu__inner h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.menu__inner>p {
+  margin-bottom: 30px;
+}
+
+.menu__btn {
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  border-radius: 99999px;
+  color: #FFF;
+  display: inline-block;
+  height: 100px;
+  line-height: 50px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 300px;
+
+  animation: yureru-updown 2s infinite;
+}
+
+@keyframes yureru-updown {
+  0% {
+    transform: translate(0px, 2px);
+  }
+
+  5% {
+    transform: translate(0px, -2px);
+  }
+
+  10% {
+    transform: translate(0px, 2px);
+  }
+
+  15% {
+    transform: translate(0px, -2px);
+  }
+
+  20% {
+    transform: translate(0px, 2px);
+  }
+
+  25% {
+    transform: translate(0px, -2px);
+  }
+
+  30% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.menu__btn::before {
+  background: -webkit-linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+  background: linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+}
+
+.btn__inner {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+  z-index: 99;
+}
+
+.btn__inner img {
+  height: 60px;
+  width: 60px;
+}
+
+.btn__inner p {
+  color: #ffffff;
+  font-size: 1.85rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+  margin-left: 20px;
+}
+
+.menu-img__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.lunch-img {
+  margin-right: 40px;
+  width: 45%;
+}
+
+.lunch-img:last-child {
+  margin-right: 0;
+}
+
+/* 追加箇所　end */
+
+/* dinner */
+.dinner-emphasis::before {
+  content: "季節限定";
+  color: #f6f0e7;
+  background-color: #FF1E21;
+  padding: 1.5% 7.5% 2.5% 6.5%;
+  margin-right: 3%;
+  clip-path: polygon(75% 0%, 90% 50%, 75% 100%, 0% 100%, 15% 50%, 0% 0%);
+}
+
+.dinner-pasta {
+  margin: 0 auto;
+}
+
+.dinner-other {
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__group {
+    flex-direction: column;
+  }
+
+  .lunch__card {
+    margin: 5% 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .menu__unit {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  h3 {
+    margin-top: 15%;
+  }
+
+  .menu__list dt:last-of-type {
+    border-bottom: solid 1px rgba(53, 53, 53, 0.2);
+    margin-bottom: 0;
+  }
+
+  .menu__list dd:last-of-type {
+    border-bottom: solid 1px rgba(53, 53, 53, 0.2);
+    margin-bottom: 0;
+  }
+
+  .other-list {
+    border-bottom: none;
+    margin-bottom: 10%;
+  }
+
+  .lunch-img {
+    margin-right: 20px;
+    width: 45%;
+  }
+}

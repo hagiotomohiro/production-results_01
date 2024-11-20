@@ -1,0 +1,479 @@
+/* 共通設定 */
+body {
+  background-color: #f6f0e7;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #f0efef;
+  font-family: "Shadows Into Light", cursive;
+  font-size: clamp(8rem, 16.66vw, 12.5rem);
+  letter-spacing: 0.05em;
+}
+
+h2 {
+  color: #0065A9;
+  font-family: "Shadows Into Light", cursive;
+  font-size: clamp(3.125rem, 7.83vw, 6.125rem);
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  color: #003C65;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: bold;
+}
+
+h4 {
+  color: #003C65;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: bold;
+}
+
+p {
+  color: #003C65;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: clamp(0.8rem, 1.3vw, 1.15rem);
+  font-weight: normal;
+  line-height: 2
+}
+
+dt, dd {
+  color: #003C65;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: clamp(0.7rem, 1.3vw, 1.15rem);
+  font-weight: normal;
+  line-height: 2
+}
+
+img, iframe {
+  border-radius: 2%;
+  width: 100%;
+}
+
+.wrapper {
+  padding: 0 4%
+}
+
+.container {
+  margin: 0 auto 45% auto;
+  position: relative;
+}
+
+.button {
+  text-align: center;
+}
+
+.button a {
+  background-color: #0065A9;
+  border: solid 3px #0065A9;
+  border-radius: 100vh;
+  color: #f0efef;
+  display: inline-block;
+  font-family: "Noto Sans JP", sans-serif;
+  padding: 5% 10%;
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.button a:hover {
+  background-color: #f6f0e7;
+  color: #0065A9;
+}
+
+/* header */
+/* SP用ナビゲーションの非表示 */
+.slide-menu {
+  display: none;
+}
+
+.sp__img {
+  display: none;
+}
+
+.header {
+  height: 100vh;
+  margin-bottom: 350px;
+  position: relative;
+  width: 100%;
+}
+
+.header__nav {
+  font-family: "Noto Sans JP", sans-serif;
+  position: absolute;
+  top: 4%;
+  right: 3%;
+  width: 80%;
+}
+
+.header__nav-inner {
+  background-color: rgba(51, 51, 51, 0.3);
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav-list {
+  color: #f0efef;
+  font-size: clamp(1rem, 1.7vw, 1.5rem);
+  padding: 3% 2%;
+  text-align: center;
+}
+
+.header__ttl {
+  height: 20%;
+  margin: auto;
+  min-width: 150px;
+  width: 20%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.header__content {
+  background-color: rgba(51, 51, 51, 0.3);
+  text-align: center;
+  width: 30%;
+  min-width: 250px;
+  padding: 2% 0;
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+}
+
+.header__content-ttl {
+  color: #f0efef;
+  font-size: clamp(1rem, 2.6vw, 2rem);
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.header__content-txt {
+  color: #f0efef;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.header__content-txt dt {
+  color: #f0efef;
+  width: 40%;
+}
+
+.header__content-txt dd {
+  color: #f0efef;
+  width: 40%;
+}
+
+.carousel-outer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.header__carousel-img {
+  width: 100%;
+}
+
+.header__carousel-img img {
+  border-radius: 0;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Top page以外のページのヘッダー設定 */
+.header__menu {
+  background-image: url(../img/top/pasta1.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 500px;
+  margin-bottom: 30px;
+}
+
+.header__menu h1 {
+  margin: 0;
+  position: static;
+}
+
+.header__contact {
+  background-image: url(../img/top/postcard.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 500px;
+  margin-bottom: 100px;
+}
+
+.nav__other {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: static;
+  width: 90%;
+}
+
+.header__img {
+  width: 79px;
+}
+
+.nav__other ul {
+  align-items: center;
+  width: 80%;
+}
+
+.header__other-ttl {
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+/* パンくずリスト */
+.breadcrumb-trail ul {
+  display: flex;
+  justify-content: center;
+}
+
+.breadcrumb-trail ul li {
+  color: #f6f0e7;
+  padding: 0 0.5%;
+}
+
+/* Top page以外のページのヘッダー設定 end */
+
+/* footer */
+.footer {
+  background-color: #0065A9;
+  padding: 6% 6% 0 6%;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__item-left {
+  width: 50%;
+}
+
+.footer__item-left img {
+  width: 50%;
+}
+
+.footer__address {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer__address dt {
+  color: #f0efef;
+  margin-right: 5%;
+  text-align: left;
+  width: 17%;
+}
+
+.footer__address dd {
+  color: #f0efef;
+  width: 78%;
+}
+
+.footer__item-right {
+  width: 50%;
+}
+
+.footer p {
+  color: #f0efef;
+  padding: 6% 0 1% 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: 100vh;
+    position: relative;
+    margin-bottom: 150px;
+  }
+
+  .header__menu {
+    background-position: top;
+    height: 50vh;
+  }
+
+  .header__contact {
+    background-position: top;
+    height: 50vh;
+  }
+
+  .header__other-ttl {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 50%;
+    text-align: center;
+
+  }
+
+  .container {
+    margin-bottom: 90%;
+  }
+
+  .topNews__container {
+    margin-bottom: calc(80% + 50%);
+  }
+
+  .topMenu__container {
+    margin-bottom: calc(80% + 70%);
+  }
+
+  .topSchedule__container {
+    margin-bottom: calc(80% + 60% + 50%);
+  }
+
+  /* SP用ナビゲーション */
+  .nav__pc {
+    display: none;
+  }
+
+  .sp__img {
+    display: block;
+    position: absolute;
+    left: 4%;
+    top: 2%;
+  }
+
+  .sp__img img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .nav__sp {
+    position: absolute;
+    right: 4%;
+    top: 2%;
+    z-index: 11;
+  }
+
+  .slide-menu {
+    background-color: #0065A9;
+    display: none;
+    padding: 15% 0 70% 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .slide-menu ul li {
+    color: #f0efef;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1.25rem;
+    padding: 3% 4%;
+    line-height: 250%;
+    text-align: center;
+  }
+
+  .slide-menu.active {
+    display: block;
+    transition: .5s;
+  }
+
+  .openbtn {
+    /*ボタン内側の基点となるためrelativeを指定。
+  追従するナビゲーションの場合はfixed＋top、rightといった位置をセットで指定*/
+    position: relative;
+    background: #0065A9;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+  }
+
+  /*ボタン内側*/
+  .openbtn .openbtn-area {
+    transition: all .6s;
+    /*アニメーションの設定*/
+    width: 50px;
+    height: 50px;
+  }
+
+  .openbtn span {
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background: #f6f0e7;
+    width: 45%;
+  }
+
+  .openbtn span:nth-of-type(1) {
+    top: 15px;
+  }
+
+  .openbtn span:nth-of-type(2) {
+    top: 23px;
+  }
+
+  .openbtn span:nth-of-type(3) {
+    top: 31px;
+  }
+
+  /*activeクラスが付与されると .openbtn-areaが360度回転し、その中の線が回転して×に*/
+  .openbtn.active .openbtn-area {
+    transform: rotate(360deg);
+  }
+
+  .openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+  }
+
+  .openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .openbtn.active span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+  }
+
+  /* SP用ナビゲーション end */
+
+
+  .header__content {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+
+  .footer__content {
+    flex-direction: column;
+  }
+
+  .footer__item-left, .footer__item-right {
+    width: 100%;
+  }
+
+  .footer__item-left {
+    margin-bottom: 10%;
+  }
+}
